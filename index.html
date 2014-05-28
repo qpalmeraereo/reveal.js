@@ -7,7 +7,7 @@
 		<title>reveal.js - The HTML Presentation Framework</title>
 
 		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
-		<meta name="author" content="Hakim El Hattab">
+		<meta name="author" content="Quinten Palmer + Eric Brown">
 
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
@@ -15,7 +15,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
 		<link rel="stylesheet" href="css/reveal.min.css">
-		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+		<link rel="stylesheet" href="css/theme/moon.css" id="theme">
 
 		<!-- For syntax highlighting -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -43,318 +43,1278 @@
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 				<section>
-					<h1>Reveal.js</h1>
-					<h3>HTML Presentations Made Easy</h3>
+					<h1>Demystifying Git</h1>
+					<h3>Getting Comfortable and Mastering Git</h3>
 					<p>
-						<small>Created by <a href="http://hakim.se">Hakim El Hattab</a> / <a href="http://twitter.com/hakimel">@hakimel</a></small>
+						Created by Eric Brown and Quinten Palmer
 					</p>
 				</section>
 
 				<section>
-					<h2>Heads Up</h2>
+					<h2>Expected Knowledge</h2>
 					<p>
-						reveal.js is a framework for easily creating beautiful presentations using HTML. You'll need a browser with
-						support for CSS 3D transforms to see it in its full glory.
+						You have used the following commands to be a functional developer in a setting with a git repository (like Aereo!)
 					</p>
-
-					<aside class="notes">
-						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
-					</aside>
-				</section>
-
-				<!-- Example of nested vertical slides -->
-				<section>
-					<section>
-						<h2>Vertical Slides</h2>
-						<p>
-							Slides can be nested inside of other slides,
-							try pressing <a href="#" class="navigate-down">down</a>.
-						</p>
-						<a href="#" class="image navigate-down">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
-					</section>
-					<section>
-						<h2>Basement Level 1</h2>
-						<p>Press down or up to navigate.</p>
-					</section>
-					<section>
-						<h2>Basement Level 2</h2>
-						<p>Cornify</p>
-						<a class="test" href="http://cornify.com">
-							<img width="280" height="326" src="https://s3.amazonaws.com/hakim-static/reveal-js/cornify.gif" alt="Unicorn">
-						</a>
-					</section>
-					<section>
-						<h2>Basement Level 3</h2>
-						<p>That's it, time to go back up.</p>
-						<a href="#/2" class="image">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="-webkit-transform: rotate(180deg);">
-						</a>
-					</section>
-				</section>
-
-				<section>
-					<h2>Slides</h2>
-					<p>
-						Not a coder? No problem. There's a fully-featured visual editor for authoring these, try it out at <a href="http://slid.es" target="_blank">http://slid.es</a>.
-					</p>
-				</section>
-
-				<section>
-					<h2>Point of View</h2>
-					<p>
-						Press <strong>ESC</strong> to enter the slide overview.
-					</p>
-					<p>
-						Hold down alt and click on any element to zoom in on it using <a href="http://lab.hakim.se/zoom-js">zoom.js</a>. Alt + click anywhere to zoom back out.
-					</p>
-				</section>
-
-				<section>
-					<h2>Works in Mobile Safari</h2>
-					<p>
-						Try it out! You can swipe through the slides and pinch your way to the overview.
-					</p>
-				</section>
-
-				<section>
-					<h2>Marvelous Unordered List</h2>
-					<ul>
-						<li>No order here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-					</ul>
-				</section>
-
-				<section>
-					<h2>Fantastic Ordered List</h2>
-					<ol>
-						<li>One is smaller than...</li>
-						<li>Two is smaller than...</li>
-						<li>Three!</li>
-					</ol>
-				</section>
-
-				<section data-markdown>
-					<script type="text/template">
-						## Markdown support
-
-						For those of you who like that sort of thing. Instructions and a bit more info available [here](https://github.com/hakimel/reveal.js#markdown).
-
+					<p data-markdown>
+						<script type="text/template">
+						```shell
+							$ git add
+							$ git commit
+							$ git push
+							$ git pull (--rebase)
 						```
-						<section data-markdown>
-						  ## Markdown support
-
-						  For those of you who like that sort of thing.
-						  Instructions and a bit more info available [here](https://github.com/hakimel/reveal.js#markdown).
-						</section>
-						```
-					</script>
-				</section>
-
-				<section id="transitions">
-					<h2>Transition Styles</h2>
-					<p>
-						You can select from different transitions, like: <br>
-						<a href="?transition=cube#/transitions">Cube</a> -
-						<a href="?transition=page#/transitions">Page</a> -
-						<a href="?transition=concave#/transitions">Concave</a> -
-						<a href="?transition=zoom#/transitions">Zoom</a> -
-						<a href="?transition=linear#/transitions">Linear</a> -
-						<a href="?transition=fade#/transitions">Fade</a> -
-						<a href="?transition=none#/transitions">None</a> -
-						<a href="?#/transitions">Default</a>
-					</p>
-				</section>
-
-				<section id="themes">
-					<h2>Themes</h2>
-					<p>
-						Reveal.js comes with a few themes built in: <br>
-						<a href="?#/themes">Default</a> -
-						<a href="?theme=sky#/themes">Sky</a> -
-						<a href="?theme=beige#/themes">Beige</a> -
-						<a href="?theme=simple#/themes">Simple</a> -
-						<a href="?theme=serif#/themes">Serif</a> -
-						<a href="?theme=night#/themes">Night</a> <br>
-						<a href="?theme=moon#/themes">Moon</a> -
-						<a href="?theme=solarized#/themes">Solarized</a>
-					</p>
-					<p>
-						<small>
-							* Theme demos are loaded after the presentation which leads to flicker. In production you should load your theme in the <code>&lt;head&gt;</code> using a <code>&lt;link&gt;</code>.
-						</small>
+						</script>
 					</p>
 				</section>
 
 				<section>
-					<h2>Global State</h2>
-					<p>
-						Set <code>data-state="something"</code> on a slide and <code>"something"</code>
-						will be added as a class to the document element when the slide is open. This lets you
-						apply broader style changes, like switching the background.
-					</p>
-				</section>
-
-				<section data-state="customevent">
-					<h2>Custom Events</h2>
-					<p>
-						Additionally custom events can be triggered on a per slide basis by binding to the <code>data-state</code> name.
-					</p>
-					<pre><code data-trim contenteditable style="font-size: 18px; margin-top: 20px;">
-Reveal.addEventListener( 'customevent', function() {
-	console.log( '"customevent" has fired' );
-} );
-					</code></pre>
-				</section>
-
-				<section>
-					<section data-background="#007777">
-						<h2>Slide Backgrounds</h2>
-						<p>
-							Set <code>data-background="#007777"</code> on a slide to change the full page background to the given color. All CSS color formats are supported.
-						</p>
-						<a href="#" class="image navigate-down">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
-					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png">
-						<h2>Image Backgrounds</h2>
-						<pre><code>&lt;section data-background="image.png"&gt;</code></pre>
-					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" data-background-repeat="repeat" data-background-size="100px">
-						<h2>Repeated Image Backgrounds</h2>
-						<pre><code style="word-wrap: break-word;">&lt;section data-background="image.png" data-background-repeat="repeat" data-background-size="100px"&gt;</code></pre>
-					</section>
-				</section>
-
-				<section data-transition="linear" data-background="#4d7e65" data-background-transition="slide">
-					<h2>Background Transitions</h2>
-					<p>
-						Pass reveal.js the <code>backgroundTransition: 'slide'</code> config argument to make backgrounds slide rather than fade.
-					</p>
-				</section>
-
-				<section data-transition="linear" data-background="#8c4738" data-background-transition="slide">
-					<h2>Background Transition Override</h2>
-					<p>
-						You can override background transitions per slide by using <code>data-background-transition="slide"</code>.
-					</p>
-				</section>
-
-				<section>
-					<h2>Clever Quotes</h2>
-					<p>
-						These guys come in two forms, inline: <q cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;The nice thing about standards is that there are so many to choose from&rdquo;</q> and block:
-					</p>
-					<blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;For years there has been a theory that millions of monkeys typing at random on millions of typewriters would
-						reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.&rdquo;
-					</blockquote>
-				</section>
-
-				<section>
-					<h2>Pretty Code</h2>
-					<pre><code data-trim contenteditable>
-function linkify( selector ) {
-  if( supports3DTransforms ) {
-
-    var nodes = document.querySelectorAll( selector );
-
-    for( var i = 0, len = nodes.length; i &lt; len; i++ ) {
-      var node = nodes[i];
-
-      if( !node.className ) {
-        node.className += ' roll';
-      }
-    }
-  }
-}
-					</code></pre>
-					<p>Courtesy of <a href="http://softwaremaniacs.org/soft/highlight/en/description/">highlight.js</a>.</p>
-				</section>
-
-				<section>
-					<h2>Intergalactic Interconnections</h2>
-					<p>
-						You can link between slides internally,
-						<a href="#/2/3">like this</a>.
-					</p>
-				</section>
-
-				<section>
-					<section id="fragments">
-						<h2>Fragmented Views</h2>
-						<p>Hit the next arrow...</p>
-						<p class="fragment">... to step through ...</p>
-						<ol>
-							<li class="fragment"><code>any type</code></li>
-							<li class="fragment"><em>of view</em></li>
-							<li class="fragment"><strong>fragments</strong></li>
-						</ol>
-
-						<aside class="notes">
-							This slide has fragments which are also stepped through in the notes window.
-						</aside>
-					</section>
-					<section>
-						<h2>Fragment Styles</h2>
-						<p>There's a few styles of fragments, like:</p>
-						<p class="fragment grow">grow</p>
-						<p class="fragment shrink">shrink</p>
-						<p class="fragment roll-in">roll-in</p>
-						<p class="fragment fade-out">fade-out</p>
-						<p class="fragment highlight-red">highlight-red</p>
-						<p class="fragment highlight-green">highlight-green</p>
-						<p class="fragment highlight-blue">highlight-blue</p>
-						<p class="fragment current-visible">current-visible</p>
-						<p class="fragment highlight-current-blue">highlight-current-blue</p>
-					</section>
-				</section>
-
-				<section>
-					<h2>Spectacular image!</h2>
-					<a class="image" href="http://lab.hakim.se/meny/" target="_blank">
-						<img width="320" height="299" src="http://s3.amazonaws.com/hakim-static/portfolio/images/meny.png" alt="Meny">
+					<h2>
+						Do and undo commits
+					</h2>
+					<a class="image">
+						<img src="images/git_learning.png" alt="Staging Diagram">
 					</a>
 				</section>
 
 				<section>
-					<h2>Export to PDF</h2>
-					<p>Presentations can be <a href="https://github.com/hakimel/reveal.js#pdf-export">exported to PDF</a>, below is an example that's been uploaded to SlideShare.</p>
-					<iframe id="slideshare" src="http://www.slideshare.net/slideshow/embed_code/13872948" width="455" height="356" style="margin:0;overflow:hidden;border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen> </iframe>
-					<script>
-						document.getElementById('slideshare').attributeName = 'allowfullscreen';
-					</script>
-				</section>
+					<h2>git add</h2>
+					<p data-markdown>
+						<script type="text/template">
+						```shell
+						 $ git status
+						On branch master
+						Changes not staged for commit:
+						  (use "git add <file>..." to update what will be committed)
+						  (use "git checkout -- <file>..." to discard changes in working directory)
 
-				<section>
-					<h2>Take a Moment</h2>
-					<p>
-						Press b or period on your keyboard to enter the 'paused' mode. This mode is helpful when you want to take distracting slides off the screen
-						during a presentation.
+							modified:   README.md
+
+						no changes added to commit (use "git add" and/or "git commit -a")
+						```
+						</script>
+					</p>
+					<p data-markdown class="fragment">
+						<script type="text/template">
+						```shell
+						 $ git add
+						```
+						</script>
+					</p>
+					<p data-markdown class="fragment">
+						<script type="text/template">
+						```shell
+						 $ git status
+						On branch master
+						Changes to be committed:
+						  (use "git reset HEAD <file>..." to unstage)
+
+							modified:   README.md
+						```
+						</script>
 					</p>
 				</section>
 
 				<section>
-					<h2>Stellar Links</h2>
+					<h2>git commit</h2>
+					<p data-markdown>
+						<script type="text/template">
+						```shell
+						 $ git status
+						On branch master
+						Changes to be committed:
+						  (use "git reset HEAD <file>..." to unstage)
+
+							modified:   README.md
+
+						no changes added to commit (use "git add" and/or "git commit -a")
+						```
+						</script>
+					</p>
+					<p data-markdown class="fragment">
+						<script type="text/template">
+						```shell
+						 $ git commit -m "This is a commit message"
+						[master 361f21a] This is the commit message
+						 1 file changed, 2 insertions(+)
+						```
+						</script>
+					</p>
+					<p data-markdown class="fragment">
+						<script type="text/template">
+						```shell
+						 $ git status
+						On branch master
+						Your branch is ahead of 'origin/master' by 1 commit.
+						  (use "git push" to publish your local commits)
+						```
+						</script>
+					</p>
+				</section>
+
+				<section>
+					<h2>git push</h2>
+					<p data-markdown>
+						<script type="text/template">
+						```shell
+						 $ git status
+						On branch master
+						Your branch is ahead of 'origin/master' by 1 commit.
+						  (use "git push" to publish your local commits)
+						```
+						</script>
+					</p>
+					<p data-markdown class="fragment">
+						<script type="text/template">
+						```shell
+						 $ git push
+						Counting objects: 5, done.
+						Delta compression using up to 3 threads.
+						Compressing objects: 100% (2/2), done.
+						Writing objects: 100% (3/3), 302 bytes, done.
+						Total 3 (delta 1), reused 0 (delta 0)
+						Unpacking objects: 100% (3/3), done.
+						To git@github.com:yournamehere/example.git
+						   9853e97..5637ac3  HEAD ->  master
+						```
+						</script>
+					</p>
+					<p data-markdown class="fragment">
+						<script type="text/template">
+						```shell
+						 $ git status
+						# On branch master
+						nothing to commit (working directory clean)
+						```
+						</script>
+					</p>
+				</section>
+
+				<section>
+					<h2>git pull (--rebase)</h2>
+					<p data-markdown>
+						<script type="text/template">
+						```shell
+						 $ git status
+						# On branch master
+						nothing to commit (working directory clean)
+						```
+						</script>
+					</p>
+					<p data-markdown class="fragment">
+						<script type="text/template">
+						```shell
+						 $ git pull --rebase
+						remote: Counting objects: 5, done.
+						remote: Compressing objects: 100% (2/2), done.
+						remote: Total 3 (delta 1), reused 0 (delta 0)
+						Unpacking objects: 100% (3/3), done.
+						From git@github.com:yournamehere/example.git
+						   9853e97..5637ac3  master	 -> origin/master
+						First, rewinding head to replay your work on top of it...
+						Fast-forwarded master to 5637ac3a4915d0c4f2a3b515809002f5239c1098.
+						```
+						</script>
+					</p>
+					<p data-markdown class="fragment">
+						<script type="text/template">
+						```shell
+						 $ git status
+						# On branch master
+						nothing to commit (working directory clean)
+						```
+						</script>
+					</p>
+				</section>
+
+				<section>
+					<h2>What is the DAG</h2>
+					<h6>(Directed Acyclic Graph)</h6>
+					<p>
+						Model to visualize the internals of a git repo (It's a tree)
+					</p>
+					<p data-markdown>
+						<script type="text/template">
+						```shell
+										F - G - H
+									   /		 \
+									  E - I - J - K - L - M - N <- (*dev, HEAD)
+									 /					 \
+						A - B - C - D - O - P - Q - R - S - T - U <- (master)
+						```
+						</script>
+					</p>
+					<p>
+						<small>*This might look scary now, but it won't by the end, we promise!</small>
+					</p>
+				</section>
+
+				<section>
+					<h2>What is a Commit?</h2>
+					<p>
+						A commit is a
+					</p>
+						<ul>
+							<li>Hash</li>
+							<li>Diff</li>
+							<li>Author/message/etc.</li>
+							<li>Parents (more detail to come)</li>
+						</ul>
+					<p data-markdown>
+						<script type="text/template">
+						```shell
+.------------------.
+| Hash: fa1afe1	|
++------------------+
+| Diff: +++/---	|
++------------------+
+| Author: Eric	 |
+| Date: 05/26/90   |
+| ...			  |
++------------------+
+| Parent: deadbeef |
+'------------------'
+						```
+						</script>
+					</p>
+					<p>
+						<small>*Under the hood there is more happening, but most people (including you) can treat it as being this simple</small>
+					</p>
+				</section>
+
+				<section>
+					<h2>How is a Commit Made?</h2>
+					<p>
+						A (non-merge) commit is built by:
+						<ul>
+							<li>Compressing the diff</li>
+							<li>Setting the meta information (author/time/message)</li>
+							<li>Setting the parent as the current HEAD</li>
+						</ul>
+					</p>
+					<p data-markdown class="fragment">
+						<script type="text/template">
+						```
+						A - B - C - D
+						```
+						</script>
+					</p>
+					<p data-markdown class="fragment">
+						<script type="text/template">
+						```
+						 $ git commit -m "Baby's first commit"
+						```
+						</script>
+					</p>
+					<p data-markdown class="fragment">
+						<script type="text/template">
+						```
+						A - B - C - D - E
+						```
+						</script>
+					</p>
+				</section>
+
+				<section>
+					<h2>What is HEAD?</h2>
+					<p>
+						A symbolic reference to the tip of the current branch
+					</p>
+					<p data-markdown>
+						<script type="text/template">
+						```
+						A - B - C - D <- (HEAD)
+						```
+						</script>
+					</p>
+				</section>
+
+				<section>
+					<h2>Simple Workflow</h2>
+					<p>
+						What we've described allows for the most basic git workflow
+					</p>
+					<p>
+						You can just keep piling on commits to make a very linear history
+					</p>
+					<p data-markdown>
+						<script type="text/template">
+						```shell
+						A - B - C - D - E - F - G - H - I <- (HEAD)
+						```
+						</script>
+					</p>
+				</section>
+
+				<section>
+					<h2>Branches</h2>
+					<p>
+						You may not have realized it but you've been living on a branch this whole time, it's called "master"
+					</p>
+					<p data-markdown>
+						<script type="text/template">
+						```shell
+						A - B - C - D - E <- (*master, HEAD)
+						```
+						</script>
+					</p>
+					<p>
+						<small>*HEAD and master are independant, but when master moves, HEAD follows master</small>
+					</p>
+				</section>
+
+				<section>
+					<h2>What is a Branch?</h2>
+					<p>
+						A pointer to a commit object*
+					</p>
+					<p data-markdown>
+						<script type="text/template">
+						```shell
+						A - B - C - D - E <- (*master, HEAD)
+						```
+						</script>
+					</p>
+					<p>
+						<small>*That's it**</small><br>
+						<small><small>**Basically</small></small>
+					</p>
+				</section>
+
+				<section>
+					<h2>What is a Branch?</h2>
+					<p>
+						We skipped over one part of how a commit is built. The current branch's pointer is moved forward when you build a new commit.
+						If you remember <a href="#/7">this slide</a> this implicitly moves HEAD forward as well.
+					</p>
+					<p data-markdown>
+						<script type="text/template">
+						```shell
+						A - B - C - D - E <- (*master, HEAD)
+						```
+						</script>
+					</p>
+					<p data-markdown class="fragment">
+						<script type="text/template">
+						```shell
+						A - B - C - D - E - F <- (*master, HEAD)
+						```
+						</script>
+					</p>
+					<p data-markdown class="fragment">
+						<script type="text/template">
+						```shell
+						A - B - C - D - E - F - G <- (*master, HEAD)
+						```
+						</script>
+					</p>
+					<p data-markdown class="fragment">
+						<script type="text/template">
+						```shell
+						A - B - C - D - E - F - G - H <- (*master, HEAD)
+						```
+						</script>
+					</p>
+				</section>
+
+				<section>
+					<h2>Making a New Branch</h2>
+					<p>
+						This creates a new symbolic reference to the current HEAD with the name that you provide
+					</p>
+					<p data-markdown>
+						<script type="text/template">
+						```shell
+						A - B - C - D - E <- (*master, HEAD)
+						```
+						</script>
+					</p>
+					<p data-markdown class="fragment">
+						<script type="text/template">
+						```
+						git branch dev
+						```
+						</script>
+					</p>
+					<p data-markdown class="fragment">
+						<script type="text/template">
+						```shell
+						A - B - C - D - E <- (*master, HEAD, dev)
+						```
+						</script>
+					</p>
+					<p>
+						<ul>
+							<li class="fragment">DOES NOT change HEAD</li>
+							<li class="fragment">DOES NOT make any new commits</li>
+							<li class="fragment">DOES NOT change any code</li>
+						</ul>
+					</p>
+				</section>
+
+				<section>
+					<h2>Switching Branches</h2>
+					<p>
+						This moves HEAD to the tip of the specified branch
+					</p>
+					<p>
+						This DOES change the files to what the branch knows about them
+					</p>
+					<p data-markdown>
+						<script type="text/template">
+						```shell
+						A - B - C - D - E <- (*master, HEAD, dev)
+						```
+						</script>
+					</p>
+					<p data-markdown class="fragment">
+						<script type="text/template">
+						```shell
+						git checkout dev
+						```
+						</script>
+					</p>
+					<p data-markdown class="fragment">
+						<script type="text/template">
+						```shell
+						A - B - C - D - E <- (*dev, HEAD, master)
+						```
+						</script>
+					</p>
+				</section>
+
+				<section>
+					<h2>Making Commits on Other Branches</h2>
+					<p>
+						HEAD is still on the "dev" branch, so it moves the dev branch forward (leaving master where it was)
+					</p>
+					<p data-markdown>
+						<script type="text/template">
+						```shell
+						A - B - C - D - E <- (*dev, HEAD, master)
+						```
+						</script>
+					</p>
+					<p data-markdown class="fragment">
+						<script type="text/template">
+						```shell
+									  E <- (*dev, HEAD)
+									 /
+						A - B - C - D <- (master)
+						```
+						</script>
+					</p>
+					<p data-markdown class="fragment">
+						<script type="text/template">
+						```shell
+									  E - F <- (*dev, HEAD)
+									 /
+						A - B - C - D <- (master)
+						```
+						</script>
+					</p>
+					<p data-markdown class="fragment">
+						<script type="text/template">
+						```shell
+									  E - F - G <- (*dev, HEAD)
+									 /
+						A - B - C - D <- (master)
+						```
+						</script>
+					</p>
+					<p data-markdown class="fragment">
+						<script type="text/template">
+						```shell
+									  E - F - G - H <- (*dev, HEAD)
+									 /
+						A - B - C - D <- (master)
+						```
+						</script>
+					</p>
+				</section>
+
+				<section>
+					<h2>Move code from one branch to another</h2>
+					<p>
+						You likely want whatever changes you've put on the branch to be merged in with other code
+					</p>
+					<p data-markdown>
+						<script type="text/template">
+						```shell
+									  E - F - G - H - I <- (*dev, HEAD)
+									 /
+						A - B - C - D <- (master)
+						```
+						</script>
+					</p>
+				</section>
+
+				<section>
+					<section>
+						<h2>
+							One way to do this is
+						</h2>
+						<h2>
+							<code>git merge</code>
+						</h2>
+						<p>
+							There are two kinds of merging
+							<ul>
+								<li>Fast-Forwarding</li>
+								<li>Non Fast-Forwarding</li>
+							</ul>
+						</p>
+					</section>
+					<section>
+						<h2>
+							Fast-Forward Merge
+						</h2>
+						<p>
+							If the branch that you're merging into is a direct ancestor with no children then you can fast-forward
+						</p>
+						<p data-markdown>
+							<script type="text/template">
+							```shell
+										  E - F - G - H - I <- (*dev, HEAD)
+										 /
+							A - B - C - D <- (master)
+							```
+							</script>
+						</p>
+						<p data-markdown class="fragment">
+							<script type="text/template">
+							```shell
+							 $ git checkout master
+							```
+							</script>
+						</p>
+						<p data-markdown class="fragment">
+							<script type="text/template">
+							```shell
+										  E - F - G - H - I <- (dev)
+										 /
+							A - B - C - D <- (*master, HEAD)
+							```
+							</script>
+						</p>
+						<p data-markdown class="fragment">
+							<script type="text/template">
+							```shell
+							 $ git merge --ff dev
+							```
+							</script>
+						</p>
+						<p data-markdown class="fragment">
+							<script type="text/template">
+							```shell
+										  E - F - G - H - I <- (*master, HEAD, dev)
+										 /
+							A - B - C - D
+							```
+							</script>
+						</p>
+					</section>
+					<section>
+						<h2>
+							This is really cheap
+						</h2>
+						<p>
+							Because branches are effectively named pointers to commits it is trivial to point them somewhere else
+						</p>
+					</section>
+					<section>
+						<h2>
+							Non Fast-Forward Merge
+						</h2>
+						<p>
+							If you want there to be history of your branch or if the branch you're merging into has changed since you branched off
+						</p>
+						<p data-markdown>
+							<script type="text/template">
+							```shell
+										  E - F - G - H - I <- (*dev, HEAD)
+										 /
+							A - B - C - D - J - K - L - M <- (master)
+							```
+							</script>
+						</p>
+						<p data-markdown class="fragment">
+							<script type="text/template">
+							```shell
+							 $ git checkout master
+							```
+							</script>
+						</p>
+						<p data-markdown class="fragment">
+							<script type="text/template">
+							```shell
+										  E - F - G - H - I <- (dev)
+										 /
+							A - B - C - D - J - K - L - M <- (*master, HEAD)
+							```
+							</script>
+						</p>
+						<p data-markdown class="fragment">
+							<script type="text/template">
+							```shell
+							 $ git merge --no-ff dev
+							```
+							</script>
+						</p>
+						<p data-markdown class="fragment">
+							<script type="text/template">
+							```shell
+										  E - F - G - H - I <- (dev)
+										 /				 \
+							A - B - C - D - J - K - L - M - N <- (*master, HEAD)
+							```
+							</script>
+						</p>
+						<p class="fragment">
+							This makes a new commit "N"
+						</p>
+					</section>
+					<section>
+						<h2>
+							This is also really cheap
+						</h2>
+						<p>
+							All that was made was a new commit object <strong>with two parents</strong>
+						</p>
+					</section>
+				</section>
+
+				<section>
+					<h2>
+						Quick: What's a Cherry Pick?
+					</h2>
+					<p>
+						Cherry picking is copying the information from one commit and placing it somewhere else with a new hash
+					</p>
+					<p data-markdown>
+						<script type="text/template">
+						```shell
+									  E - F - G - H - I <- (dev)
+									 /
+						A - B - C - D - J - K - L - M <- (*master, HEAD)
+						```
+						</script>
+					</p>
+					<p data-markdown class="fragment">
+						<script type="text/template">
+						```shell
+						git cherry-pick I
+						```
+						</script>
+					</p>
+					<p data-markdown class="fragment">
+						<script type="text/template">
+						```shell
+									  E - F - G - H - I <- (dev)
+									 /
+						A - B - C - D - J - K - L - M - I' <- (*master, HEAD)
+						```
+						</script>
+					</p>
+					<p class="fragment">
+						This makes a new commit which has the same content as I, but a different hash
+					</p>
+				</section>
+
+				<section>
+					<h2>
+						Merging with Cherry Picks
+					</h2>
+					<p>
+						Given what we know about cherry picking, we could logically copy branches with a series of cherry picks
+					</p>
+					<p data-markdown>
+						<script type="text/template">
+						```shell
+									  E - F - G - H - I <- (dev)
+									 /
+						A - B - C - D - J - K - L - M <- (*master, HEAD)
+						```
+						</script>
+					</p>
+					<p data-markdown class="fragment">
+						<script type="text/template">
+						```shell
+						 $ git cherry-pick E; git cherry-pick F; git cherry-pick G; git cherry-pick H; git cherry-pick I;
+						```
+						</script>
+					</p>
+					<p data-markdown class="fragment">
+						<script type="text/template">
+						```shell
+									  E - F - G - H - I <- (dev)
+									 /
+						A - B - C - D - J - K - L - M - E'- F'- G'- H'- I'<- (*master, HEAD)
+						```
+						</script>
+					</p>
+				</section>
+
+				<section>
+					<section>
+						<h2>
+							Cherry Picking isn't that fun
+						</h2>
+						<p>
+							Looking at the previous cherry pick example, it is inconvient and does not scale well to move lots of commits with cherry picks
+						</p>
+						<p data-markdown>
+							<script type="text/template">
+							```shell
+										  E - F - G - H - I <- (dev)
+										 /
+							A - B - C - D - J - K - L - M - E'- F'- G'- H'- I'<- (*master, HEAD)
+							```
+							</script>
+						</p>
+						<p>
+							It would be nice if you could do batches of them together, right? Git has provided this for us, it's called...
+						</p>
+					</section>
+					<section>
+						<h2>
+							<code>Git Rebase</code>
+						</h2>
+						<p>
+							Let's see this in action
+						</p>
+						<p data-markdown class="fragment">
+							<script type="text/template">
+							```shell
+										  E - F - G - H - I <- (dev)
+										 /
+							A - B - C - D - J - K - L <- (*master, HEAD)
+							```
+							</script>
+						</p>
+						<p data-markdown class="fragment">
+							<script type="text/template">
+							```shell
+							 $ git rebase master dev
+							```
+							</script>
+						</p>
+						<p data-markdown class="fragment">
+							<script type="text/template">
+							```shell
+										  E - F - G - H - I
+										 /
+							A - B - C - D - J - K - L - E'- F'- G'- H'- I' <- (dev)
+													^
+													 \
+													   - (*master, HEAD)
+							```
+							</script>
+						</p>
+						<p data-markdown class="fragment">
+							<script type="text/template">
+							```shell
+							 $ git merge dev
+							```
+							</script>
+						</p>
+						<p data-markdown class="fragment">
+							<script type="text/template">
+							```shell
+										  E - F - G - H - I
+										 /
+							A - B - C - D - J - K - L - E'- F'- G'- H'- I' <- (*master, HEAD, dev)
+							```
+							</script>
+						</p>
+						<p class="fragment">
+							<small>*This works because it is a fast-forward merge</small>
+						</p>
+					</section>
+					<section>
+						<h2>
+							What is rebasing then?
+						</h2>
+						<p>
+							Rebasing just moves a series of commits
+						</p>
+						<p>
+							Under the hood rebasing is just a shell script that uses cherry picking
+						</p>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>
+							Common use cases of rebasing
+						</h2>
+					</section>
+					<section>
+						<h2>
+							<code>Git pull --rebase</code>
+						</h2>
+						<p data-markdown>
+							<script type="text/template">
+							```shell
+							 $ git pull --rebase
+							```
+							</script>
+						</p>
+						<p>
+							This pulls from remote (raise your hand if you don't know what this is) and then applies your local commits on top of the new HEAD
+						</p>
+						<p data-markdown class="fragment">
+							<script type="text/template">
+							```shell
+							A - B - C - D - J - K - L <- (*master, HEAD)
+										^
+										 \
+										   - (*origin/master)
+							```
+							</script>
+						</p>
+						<p data-markdown class="fragment">
+							<script type="text/template">
+							```shell
+							 $ git pull --rebase
+							```
+							</script>
+						</p>
+						<p data-markdown class="fragment">
+							<script type="text/template">
+							```shell
+							A - B - C - D - E - F - J'- K'- L'<- (*master, HEAD)
+												^
+												 \
+												   - (*origin/master)
+							```
+							</script>
+						</p>
+					</section>
+					<section>
+						<h2>
+							<code>Git rebase -i</code>
+						</h2>
+						<p data-markdown>
+							<script type="text/template">
+							```shell
+							 $ git rebase -i origin/master
+							```
+							</script>
+						</p>
+						<p>
+							This is the same rebase that we've discussed, but it allows you to pause between certain commits to make changes
+						</p>
+						<p data-markdown class="fragment">
+							<script type="text/template">
+							```shell
+							A - B - C - D - J - K - L <- (*master, HEAD)
+										^
+										 \
+										   - (*origin/master)
+							```
+							</script>
+						</p>
+						<p data-markdown class="fragment">
+							<script type="text/template">
+							```shell
+							 $ git rebase -i origin/master
+							```
+							</script>
+						</p>
+						<p data-markdown class="fragment">
+							<script type="text/template">
+							```shell
+							Make changes to J, K, or L if you want
+							```
+							</script>
+						</p>
+						<p data-markdown class="fragment">
+							<script type="text/template">
+							```shell
+							A - B - C - D - J'- K'- L'<- (*master, HEAD)
+										^
+										 \
+										   - (*origin/master)
+							```
+							</script>
+						</p>
+					</section>
+					<section>
+						<h2>
+							<code>git rebase --onto</code>
+						</h2>
+						<p data-markdown>
+							<script type="text/template">
+							```shell
+							 $ git rebase --onto K D dev
+							```
+							</script>
+						</p>
+						<p>
+							This allows you to change the parent of a commit (useful to move where a branch branches)
+						</p>
+						<p data-markdown class="fragment">
+							<script type="text/template">
+							```shell
+										  E - F - G - H - I <- (dev)
+										 /
+							A - B - C - D - J - K - L - M <- (*master, HEAD)
+							```
+							</script>
+						</p>
+						<p data-markdown class="fragment">
+							<script type="text/template">
+							```shell
+							 $ git rebase --onto K D dev
+							```
+							</script>
+						</p>
+						<p data-markdown class="fragment">
+							<script type="text/template">
+							```shell
+												  E'- F'- G'- H'- I'<- (dev)
+												 /
+							A - B - C - D - J - K - L - M <- (*master, HEAD)
+							```
+							</script>
+						</p>
+					</section>
+				</section>
+				<section>
+					<h2>
+						Navigating in the DAG
+					</h2>
+					<p>
+						The two primary commands that we'll talk about are:
+					</p>
+					<p data-markdown>
+						<script type="text/template">
+						```shell
+						 $ git checkout
+						 $ git reset
+						```
+						</script>
+					</p>
+				</section>
+
+				<section>
+					<section>
+						<h2>
+							<code>git checkout</code>
+						</h2>
+						<p>
+							This moves HEAD around
+						</p>
+						<p data-markdown class="fragment">
+							<script type="text/template">
+							```shell
+										  E - F - G - H - I <- (dev)
+										 /
+							A - B - C - D - J - K - L - M <- (*master, HEAD)
+							```
+							</script>
+						</p>
+						<p data-markdown class="fragment">
+							<script type="text/template">
+							```shell
+							 $ git checkout K
+							```
+							</script>
+						</p>
+						<p data-markdown class="fragment">
+							<script type="text/template">
+							```shell
+										  E - F - G - H - I <- (dev)
+										 /
+							A - B - C - D - J - K - L - M <- (master)
+												^
+												 \
+												   - (HEAD)
+							```
+							</script>
+						</p>
+						<p class="fragment">
+							<small>*This does not move any branches</small>
+						</p>
+						<p class="fragment">
+							<small>**This leaves you in a detached head mode (you cannot commit)</small>
+						</p>
+					</section>
+					<section>
+						<h2>
+							<code>git checkout (branches)</code>
+						</h2>
+						<p>
+							If you checkout a branch, you move HEAD to that branch
+						</p>
+						<p data-markdown class="fragment">
+							<script type="text/template">
+							```shell
+										  E - F - G - H - I <- (dev)
+										 /
+							A - B - C - D - J - K - L - M <- (*master, HEAD)
+							```
+							</script>
+						</p>
+						<p data-markdown class="fragment">
+							<script type="text/template">
+							```shell
+							 $ git checkout dev
+							```
+							</script>
+						</p>
+						<p data-markdown class="fragment">
+							<script type="text/template">
+							```shell
+										  E - F - G - H - I <- (*dev, HEAD)
+										 /
+							A - B - C - D - J - K - L - M <- (master)
+							```
+							</script>
+						</p>
+						<p class="fragment">
+							<small>*This still does not move master</small>
+						</p>
+						<p class="fragment">
+							<small>**You are now on dev, and can make commits to dev</small>
+						</p>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>
+							<code>git reset</code>
+						</h2>
+						<p>
+							This moves branches around
+						</p>
+						<p data-markdown class="fragment">
+							<script type="text/template">
+							```shell
+										  E - F - G - H - I <- (dev)
+										 /
+							A - B - C - D - J - K - L - M <- (*master, HEAD)
+							```
+							</script>
+						</p>
+						<p data-markdown class="fragment">
+							<script type="text/template">
+							```shell
+							 $ git reset --hard HEAD^
+							```
+							</script>
+						</p>
+						<p data-markdown class="fragment">
+							<script type="text/template">
+							```shell
+										  E - F - G - H - I <- (dev)
+										 /
+							A - B - C - D - J - K - L - M
+													^
+													 \
+													   - (*master, HEAD)
+							```
+							</script>
+						</p>
+						<p class="fragment">
+							<small>*M still exists, but is unreachable</small>
+						</p>
+						<p class="fragment">
+							<small>**Any uncommited changes to the filesystem are lost</small>
+						</p>
+					</section>
+				</section>
+
+				<section>
+					<h2>
+						Checkout vs. Reset
+					</h2>
+					<p>
+						What is the formal difference?
+					</p>
 					<ul>
-						<li><a href="http://slid.es">Try the online editor</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js">Source code on GitHub</a></li>
-						<li><a href="http://twitter.com/hakimel">Follow me on Twitter</a></li>
+						<li>Checkout moves HEAD (and not branches)</li>
+						<li>Reset moves branches (and HEAD comes with)</li>
 					</ul>
 				</section>
 
 				<section>
-					<h1>THE END</h1>
-					<h3>BY Hakim El Hattab / hakim.se</h3>
+					<h2>
+						Not Magic™
+					</h2>
+					<p>
+						What happens to these poor commits (L and M)?
+					</p>
+					<p data-markdown>
+						<script type="text/template">
+						```shell
+									  E - F - G - H - I <- (dev)
+									 /
+						A - B - C - D - J - K - L - M <- (*master, HEAD)
+						```
+						</script>
+					</p>
+					<p data-markdown class="fragment">
+						<script type="text/template">
+						```shell
+						git reset --hard HEAD^^
+						```
+						</script>
+					</p>
+					<p data-markdown class="fragment">
+						<script type="text/template">
+						```shell
+									  E - F - G - H - I <- (dev)
+									 /
+						A - B - C - D - J - K - L - M
+											^
+											 \
+											   - (*master, HEAD)
+						```
+						</script>
+					</p>
+					<p class="fragment">
+						Nothing, they are still alive (for now)!
+					</p>
 				</section>
 
-			</div>
+				<section>
+					<h2>
+						Still Not Magic™
+					</h2>
+					<p>
+						Watch this!
+					</p>
+					<p data-markdown>
+						<script type="text/template">
+						```shell
+									  E - F - G - H - I <- (dev)
+									 /
+						A - B - C - D - J - K - L - M
+											^
+											 \
+											   - (*master, HEAD)
+						```
+						</script>
+					</p>
+					<p data-markdown class="fragment">
+						<script type="text/template">
+						```shell
+									  E - F - G - H - I <- (dev)
+									 /
+						A - B - C - D - J - K <- (*master, HEAD)
+											 \
+											   L - M
+						```
+						</script>
+					</p>
+					<p data-markdown class="fragment">
+						<script type="text/template">
+						```shell
+						 $ git commit -m "New commit to master"
+						```
+						</script>
+					</p>
+					<p data-markdown class="fragment">
+						<script type="text/template">
+						```shell
+									  E - F - G - H - I <- (dev)
+									 /
+						A - B - C - D - J - K - N <- (*master, HEAD)
+											 \
+											   L - M
+						```
+						</script>
+					</p>
+					<p class="fragment">
+						L and M are still still alive!
+					</p>
+				</section>
 
+				<section>
+					<h2>
+						Wait, I want them back!
+					</h2>
+					<p>
+						How do I retrieve them? (In real life they are big hashes that I didn't commit to memory)
+					</p>
+					<p>
+						You should use...
+					</p>
+					<h1 class="fragment current-visible grow">
+						git reflog
+					</h1>
+				</section>
+
+				<section>
+					<h2>
+						<code>git reflog</code>
+					</h2>
+					<p>
+						The ref log stores the changes to branches and HEAD
+					</p>
+					<p data-markdown class="fragment">
+						<script type="text/template">
+						```shell
+									  E - F - G - H - I <- (dev)
+									 /
+						A - B - C - D - J - K - N <- (*master, HEAD)
+											 \
+											   L - M
+						```
+						</script>
+					</p>
+					<p data-markdown class="fragment">
+						<script type="text/template">
+						```shell
+						 $ git cherry-pick HEAD@{2}
+						 $ git cherry-pick HEAD@{4}
+						```
+						</script>
+					</p>
+					<p data-markdown class="fragment">
+						<script type="text/template">
+						```shell
+									  E - F - G - H - I <- (dev)
+									 /
+						A - B - C - D - J - K - N - L'- M' <- (*master, HEAD)
+											 \
+											   L - M
+						```
+						</script>
+					</p>
+					<p class="fragment">
+						Live Demo to show how to use the reflog
+					</p>
+					<h1 class="fragment current-visible grow">
+						LIVE DEMO
+					</h1>
+				</section>
+
+				<section>
+					<h2>
+						<code>git gc</code>
+					</h2>
+					<p>
+						git gc will:
+					</p>
+					<ul>
+						<li>Prune unreachable commits</li>
+						<li>Expire the reflog (entries older than 90 days)</li>
+					</ul>
+				</section>
+
+				<section>
+					<h1>
+						Thank you!
+					</h1>
+					<h2 class="fragment">
+						Any Questions?
+					</h2>
+				</section>
+			</div>
 		</div>
 
 		<script src="lib/js/head.min.js"></script>
@@ -368,10 +1328,12 @@ function linkify( selector ) {
 				controls: true,
 				progress: true,
 				history: true,
-				center: true,
+				center: false,
+				transitionSpeed: 'fast',
+				width: 1300,
 
 				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
-				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+				transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/fade/none
 
 				// Parallax scrolling
 				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
